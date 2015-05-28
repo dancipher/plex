@@ -1,0 +1,19 @@
+INSTALL
+---
+I had no time to add an installer, or a Makefile.
+You need the following modules:
+
+-   Tie::IxHash
+-   Perl6::Slurp
+-   YAML::Tiny
+-   HTTP::Response  (probably already installed)
+
+Plex 2.1 will just need Tie::IxHash ...
+
+Well. Copy the "Plex" directory to the root directory (/) 
+[yeah, the / where /etc is] on your linux, unix system.
+
+Now copy the stuff in Config to /etc/plex.
+
+Fix the document root in /etc/plex/plex.cfg, and create at
+least one index file there.

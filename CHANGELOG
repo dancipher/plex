@@ -1,0 +1,9 @@
+CHANGELOG
+=========
+- Compiler and Lexer are fully customizable now.
+- System is stable.
+- File Handlers.
+- Customizable File Types.
+- Missing in 2.0, coming in 2.1:
+- security framework comes again
+- include function

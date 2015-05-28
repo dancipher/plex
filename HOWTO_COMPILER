@@ -1,0 +1,27 @@
+HOWTO_COMPILER
+---
+A very cool feature of Plex is the possibility to add rules to the
+Lexing/Compiler System, e.g.:
+
+    if you don't like <% ... %>, but <: ... :>
+
+1) /etc/plex/plex.cfg
+
+search
+
+    {compiler}->{ignore_chars} = %#
+
+add:
+
+    {compiler}->{ignore_chars} = %#:
+
+2) /etc/plex/lex.cfg
+search
+
+    {perl}->{start} = <% and {perl}->{end} = %>
+
+change it to:
+    
+    {perl}->{start} = <: and {perl}->{end} = :>
+
+now restart plex.
